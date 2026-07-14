@@ -87,6 +87,7 @@
   .nav-cta{ text-decoration:none; font-weight:600; font-size:0.88rem; color: var(--text-dark); background: var(--chufa); padding: 11px 20px; border-radius: 100px; transition: transform .2s ease, background .2s ease; }
   .nav-cta:hover, .nav-cta:focus-visible{ background: var(--horchata); transform: translateY(-1px); }
   .nav-toggle{ display:none; background:none; border:1px solid rgba(244,234,212,0.3); color: var(--text-light); width:40px; height:40px; border-radius:8px; cursor:pointer; }
+  .nav-links-shop{ display:none; }
   .lang-switch{ display:flex; align-items:center; gap:2px; margin-left: 10px; border: 1px solid rgba(244,234,212,0.25); border-radius:100px; padding: 3px; }
   .lang-btn{ font-family: var(--body); font-weight:700; font-size:0.66rem; letter-spacing:0.01em; color: var(--muted); background: transparent; border: none; border-radius:100px; padding: 6px 7px; cursor:pointer; transition: background .2s ease, color .2s ease; }
   .lang-btn:hover, .lang-btn:focus-visible{ color: var(--text-light); }
@@ -192,6 +193,8 @@
   }
   @media (max-width:640px){
     .coloring-grid{ grid-template-columns: 1fr; }
+    .product-art-duo, .product-art-trio{ grid-template-columns: 1fr; height:auto; }
+    .product-art-duo img, .product-art-trio img{ height: 200px; }
   }
 
   /* ---------- Kürbis-Deko ---------- */
@@ -298,6 +301,9 @@
     .nav-toggle{ display:block; order:1; }
     .logo{ order:0; }
     .lang-switch{ order:2; margin-left:0; flex-basis:100%; justify-content:center; }
+    .nav-links-shop{ display:block; margin-top: 6px; }
+    .nav-links-shop a{ display:inline-block; font-weight:700; color: var(--text-dark) !important; background: var(--chufa); padding: 12px 22px; border-radius: 100px; }
+    .nav-links-shop a::after{ display:none; }
     .value-grid{ grid-template-columns: 1fr; }
     .field-row{ grid-template-columns:1fr; }
     .footer-row{ flex-direction:column; align-items:flex-start; }
@@ -318,6 +324,7 @@
       <li><a href="#kinder-ideen" data-es="Para niños" data-va="Per a xiquets" data-pt="Para crianças" data-fr="Pour les enfants" data-en="For Kids">Für Kinder</a></li>
       <li><a href="#hof" data-es="La finca" data-va="La finca" data-pt="A quinta" data-fr="La ferme" data-en="The Farm">Der Hof</a></li>
       <li><a href="#kontakt" data-es="Contacto" data-va="Contacte" data-pt="Contacto" data-fr="Contact" data-en="Contact">Kontakt</a></li>
+      <li class="nav-links-shop"><a href="https://tienda-terraixufa.pod.coop/721/products" target="_blank" rel="noopener" data-es="Ir a la tienda" data-va="Anar a la botiga" data-pt="Ir à loja" data-fr="Aller à la boutique" data-en="Go to shop">Zum Shop →</a></li>
     </ul>
     <a href="https://tienda-terraixufa.pod.coop/721/products" class="nav-cta" data-es="Ir a la tienda" data-va="Anar a la botiga" data-pt="Ir à loja" data-fr="Aller à la boutique" data-en="Go to shop">Zum Shop</a>
     <div class="lang-switch" role="group" aria-label="Sprache wechseln / Cambiar idioma / Switch language / Canviar idioma / Mudar idioma / Changer de langue">

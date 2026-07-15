@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -327,11 +327,11 @@
       <li class="nav-links-shop"><a href="https://tienda-terraixufa.pod.coop/721/products" target="_blank" rel="noopener" data-es="Ir a la tienda" data-va="Anar a la botiga" data-pt="Ir à loja" data-fr="Aller à la boutique" data-en="Go to shop">Zum Shop →</a></li>
     </ul>
     <a href="https://tienda-terraixufa.pod.coop/721/products" class="nav-cta" data-es="Ir a la tienda" data-va="Anar a la botiga" data-pt="Ir à loja" data-fr="Aller à la boutique" data-en="Go to shop">Zum Shop</a>
-    <div class="lang-switch" role="group" aria-label="Sprache wechseln / Cambiar idioma / Switch language / Canviar idioma / Mudar idioma / Changer de langue">
-      <button class="lang-btn active" id="langDe" data-lang="de">DE</button>
-      <button class="lang-btn" id="langEs" data-lang="es">ES</button>
-      <button class="lang-btn" id="langEn" data-lang="en">EN</button>
+    <div class="lang-switch" role="group" aria-label="Cambiar idioma / Canviar idioma / Switch language / Sprache wechseln / Mudar idioma / Changer de langue">
+      <button class="lang-btn active" id="langEs" data-lang="es">ES</button>
       <button class="lang-btn" id="langVa" data-lang="va">VAL</button>
+      <button class="lang-btn" id="langEn" data-lang="en">EN</button>
+      <button class="lang-btn" id="langDe" data-lang="de">DE</button>
       <button class="lang-btn" id="langPt" data-lang="pt">PT</button>
       <button class="lang-btn" id="langFr" data-lang="fr">FR</button>
     </div>
@@ -1087,7 +1087,7 @@
     note.textContent = 'Danke! Dies ist eine Platzhalter-Bestätigung — echte Versandfunktion muss noch angebunden werden.';
   });
 
-  // Sprachumschalter Deutsch / Español / English
+  // Sprachumschalter Español / Valencià / English / Deutsch / Português / Français
   const translatable = document.querySelectorAll('[data-es]');
   translatable.forEach(el => { el.dataset.de = el.innerHTML; });
   let currentLang = 'de';
@@ -1108,6 +1108,7 @@
   langButtons.forEach(btn => {
     btn.addEventListener('click', () => setLang(btn.dataset.lang));
   });
+  setLang('es');
 </script>
 
 </body>
